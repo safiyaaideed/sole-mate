@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sneaker.description %>
+</p>
+
+<p>
+  <strong>Pricefloat:</strong>
+  <%= @sneaker.pricefloat %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @sneaker.availability %>
+</p>
+
+<p>
+  <strong>Uder:</strong>
+  <%= @sneaker.uder %>
+</p>
+
+<%= link_to 'Edit', edit_sneaker_path(@sneaker) %> |
+<%= link_to 'Back', sneakers_path %>

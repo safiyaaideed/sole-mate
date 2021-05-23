@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Authentics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sneakers</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Availability</th>
+      <th>Category</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authentics.each do |authentic| %>
+      <tr>
+        <td><%= authentic.Sneakers %></td>
+        <td><%= authentic.name %></td>
+        <td><%= authentic.description %></td>
+        <td><%= authentic.price %></td>
+        <td><%= authentic.availability %></td>
+        <td><%= authentic.category %></td>
+        <td><%= authentic.user_id %></td>
+        <td><%= link_to 'Show', authentic %></td>
+        <td><%= link_to 'Edit', edit_authentic_path(authentic) %></td>
+        <td><%= link_to 'Destroy', authentic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Authentic', new_authentic_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sneakers:</strong>
+  <%= @authentic.Sneakers %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @authentic.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @authentic.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @authentic.price %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @authentic.availability %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @authentic.category %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @authentic.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_authentic_path(@authentic) %> |
+<%= link_to 'Back', authentics_path %>
