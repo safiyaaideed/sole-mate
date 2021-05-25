@@ -1,5 +1,6 @@
 class AuthenticsController < ApplicationController
   before_action :set_authentic, only: %i[ show edit update destroy ]
+  before_action :set_categories
 
   # GET /authentics or /authentics.json
   def index
@@ -21,11 +22,11 @@ class AuthenticsController < ApplicationController
 
   # POST /authentics or /authentics.json
   def create
-    @authentic = Authentic.new(authentic_params)
-
+    @authentic = Authentic.new(authentic_params.merge(user: current_user))
+    
     respond_to do |format|
       if @authentic.save
-        format.html { redirect_to @authentic, notice: "Authentic was successfully created." }
+        format.html { redirect_to @authentic, notice: "The sneaker was successfully created." }
         format.json { render :show, status: :created, location: @authentic }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -64,6 +65,11 @@ class AuthenticsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def authentic_params
-      params.require(:authentic).permit(:Sneakers, :name, :description, :price, :availability, :category, :user_id)
+      params.require(:authentic).permit(:Sneakers, :name, :description, :price, :availability, :category_id, :photo )
+    end
+
+    def set_categories
+      @categories=Category.all
     end
 end
+ 
