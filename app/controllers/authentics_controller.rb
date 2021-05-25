@@ -22,8 +22,9 @@ class AuthenticsController < ApplicationController
 
   # POST /authentics or /authentics.json
   def create
-    @authentic = Authentic.new(authentic_params.merge(user: current_user))
-    
+    # @authentic = Authentic.new(authentic_params.merge(user: current_user))
+    @authentic = Authentic.new(Sneakers: authentic_params[:Sneakers], name: authentic_params[:name], description: authentic_params[:description], price: authentic_params[:price], availability: [:availability], category_id: authentic_params[:category_id], user: current_user)
+    @authentic.photo.attach(authentic_params[:photo])
     respond_to do |format|
       if @authentic.save
         format.html { redirect_to @authentic, notice: "The sneaker was successfully created." }
