@@ -1,7 +1,7 @@
 class AuthenticsController < ApplicationController
   before_action :set_authentic, only: %i[ show edit update destroy ]
   before_action :set_categories
-  
+
 
   # GET /authentics or /authentics.json
   def index
@@ -19,6 +19,13 @@ class AuthenticsController < ApplicationController
 
   # GET /authentics/1/edit
   def edit
+    if Authentic.find_by(id: params[:id], user_id: current_user.id)
+    else 
+      respond_to do |format|
+        format.html { redirect_to authentics_url, alert: "Unauthorized access"}
+      end
+    end
+
   end
 
   # POST /authentics or /authentics.json
@@ -40,23 +47,35 @@ class AuthenticsController < ApplicationController
   # PATCH/PUT /authentics/1 or /authentics/1.json
   def update
     respond_to do |format|
-      if @authentic.update(authentic_params)
-        format.html { redirect_to @authentic, notice: "Authentic was successfully updated." }
-        format.json { render :show, status: :ok, location: @authentic }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @authentic.errors, status: :unprocessable_entity }
-      end
+      if  Authentic.find_by(id: params[:id], user_id: current_user.id) 
+          if @authentic.update(authentic_params)
+            format.html { redirect_to @authentic, notice: "Authentic was successfully updated." }
+            format.json { render :show, status: :ok, location: @authentic }
+          else
+            format.html { render :edit, status: :unprocessable_entity }
+            format.json { render json: @authentic.errors, status: :unprocessable_entity }
+          end
+      else 
+        respond_to do |format|
+          format.html { redirect_to authentics_url, alert: "Unauthorized access"}
+        end
+      end   
     end
   end
 
   # DELETE /authentics/1 or /authentics/1.json
   def destroy
-    @authentic.destroy
-    respond_to do |format|
-      format.html { redirect_to authentics_url, notice: "Authentic was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    if  Authentic.find_by(id: params[:id], user_id: current_user.id) 
+      @authentic.destroy
+      respond_to do |format|
+        format.html { redirect_to authentics_url, notice: "Authentic was successfully destroyed." }
+        format.json { head :no_content }
+      end
+    else
+      respond_to do |format|
+        format.html { redirect_to authentics_url, alert: "Unauthorized access"}
+      end
+    end    
   end
 
   private
