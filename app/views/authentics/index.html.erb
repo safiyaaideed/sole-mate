@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Authentics</h1>
+<h1>Authentic Sneakers</h1>
 
 <table>
   <thead>
@@ -28,7 +28,7 @@
         <td><%= authentic.user_id %></td>
         <td><%= link_to 'Show', authentic %></td>
         <td><%= link_to 'Edit', edit_authentic_path(authentic) %></td>
-        <td><%= link_to 'Destroy', authentic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', authentic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Authentic', new_authentic_path %>
+<%= link_to 'New sneakers', new_authentic_path %>
