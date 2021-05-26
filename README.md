@@ -1,5 +1,6 @@
 #  Identification of the problem you are trying to solve by building this particular marketplace app.
-This particular marketplace was built so that it was easier for 
+This particular marketplace was built so that it was easier for anyone who wants to buy sneakers online for a cheaper price. Most sneaker resell stores upsell the sneakers by almost triple their worth when they are more rare limited items. This marketplace (Sole-Mate) strives to gice the best prices available.
+
 # 	Why is it a problem that needs solving?
 
 # A link (URL) to your deployed app (i.e. website)
