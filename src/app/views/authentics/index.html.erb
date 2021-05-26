@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+<% @authentics.each do |authentic| %>
+  <div class="col">
+    <div class="card">
+    <%if authentic.photo.attached?%>
+      <%=image_tag authentic.photo ,class: "card-img-top"%>
+    <%end%>  
+      <div class="card-body">
+        <h5 class="card-title"><%=authentic.name %></h5>
+        <div>
+        <span style="color:black">$ <%=authentic.price%></span>
+        </div>
+        <p class="card-text"><%= authentic.description %></p>
+        <%= link_to 'Show', authentic %>
+        <%if user_signed_in? && current_user==authentic.user  %>
+         <%= link_to 'Edit', edit_authentic_path(authentic) %>
+         <%= link_to 'Delete', authentic, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%end%>
+      </div>
+    </div>
+  </div>
+<%end%> 
+
+
+</div>
+<%= link_to 'New sneakers', new_authentic_path %>
