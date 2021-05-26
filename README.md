@@ -86,6 +86,11 @@ The has_and_belongs_to_many Association
 
 The user has many products and those products belong to the one user, eg. The user can upload many different sneakers but all of those sneakers belong to the one user and are accessible/editable by the one user. 
 
+Here is the code that supports that the user has many products and the products belong to one user.
+
+<%= image_tag ("associations.png") %>
+
+
 # Discuss the database relations to be implemented in your application
 
 
