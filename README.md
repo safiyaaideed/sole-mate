@@ -12,6 +12,9 @@ The main issue is accessibility, to put it simply it is difficult to find limite
 - Ensure the repo is accessible by your Educators
 # R11	Description of your marketplace app (website), including:
 - Purpose
+
+To have an easily accessible marketplace for not only authentic sneaker buyers but sellers too, givng the seller the ability to upload as many sneakers as possible. As well as providing the buyer with a safe and easy environment for purchase.
+
 - Functionality / features
 - Sitemap
 - Screenshots
