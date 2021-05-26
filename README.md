@@ -45,6 +45,17 @@ Gems: Devise, Rolify, SimpleForm
 
 # User stories for your app
 
+
+User abilities:
+
+Sign up
+Log in/sign out
+Create your listing
+Remove your listing
+Edit your listing
+Ability to see other listings 
+
+
 # Wireframes for your app
 
 # An ERD for your app
