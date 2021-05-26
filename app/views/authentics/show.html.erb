@@ -34,6 +34,8 @@
   <strong>User:</strong>
   <%= @authentic.user.email%>
 </p>
-
-<%= link_to 'Edit', edit_authentic_path(@authentic) %> |
-<%= link_to 'Available shoes', authentics_path %>
+<%if user_signed_in? && current_user==@authentic.user  %>
+ <%= link_to 'Edit', edit_authentic_path(@authentic) %> |
+ 
+<%end%>
+<%= link_to 'Browse shoes', authentics_path %>
