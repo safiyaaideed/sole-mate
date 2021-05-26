@@ -33,7 +33,7 @@ Shows available products for sale  without having to log in.
 
 - Screenshots
 
-![1st.png](login.png)
+![1st.png](1st.png)
 ![2nd.png](signup)
 ![3rd.png](browse1)
 ![4th.png](browse2)
