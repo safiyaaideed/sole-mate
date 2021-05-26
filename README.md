@@ -45,7 +45,7 @@ Javascript
 Ruby on Rails
 Postgresql
 Heroku 
-Gems: Devise, Rolify, SimpleForm
+Gems: Devise, Rolify, SimpleForm, .Env
 
 # User stories for your app
 
@@ -71,11 +71,23 @@ The web app is built on Rails and is based on the Model-View-Controller architec
 
 # Detail any third party services that your app will use
 
-The third party applications used in the development of this web application were heroku which is a cloud platform used to manage and deploy applications in an easy way that makes them production ready.
+The third party applications used in the development of this web application were Bootstrap, a CSS framework with ready to use templates for the use of web applications, heroku which is a cloud platform used to manage and deploy applications in an easy way that makes them production ready. The ruby gems used were .env, Rolify for authorisation, simple form for log in an devise for authentication. 
 
 # Describe your projects models in terms of the relationships (active record associations) they have with each other
 
+The types of association rails has are the following:
+
+The belongs_to Association
+The has_one Association
+The has_many Association
+The has_many :through Association
+The has_one :through Association
+The has_and_belongs_to_many Association
+
+The user has many products and those products belong to the one user, eg. The user can upload many different sneakers but all of those sneakers belong to the one user and are accessible/editable by the one user. 
+
 # Discuss the database relations to be implemented in your application
+
 
 # Provide your database schema design
 
