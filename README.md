@@ -88,7 +88,8 @@ The user has many products and those products belong to the one user, eg. The us
 
 Here is the code that supports that the user has many products and the products belong to one user.
 
-<%= image_tag ("associations.png") %>
+![Association1](associations.png "User/Product").
+![Association2](associations1.png "User/product").
 
 
 # Discuss the database relations to be implemented in your application
