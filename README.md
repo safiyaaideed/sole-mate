@@ -71,6 +71,8 @@ The web app is built on Rails and is based on the Model-View-Controller architec
 
 # Detail any third party services that your app will use
 
+The third party applications used in the development of this web application were heroku which is a cloud platform used to manage and deploy applications in an easy way that makes them production ready.
+
 # Describe your projects models in terms of the relationships (active record associations) they have with each other
 
 # Discuss the database relations to be implemented in your application
