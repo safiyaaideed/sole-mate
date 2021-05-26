@@ -13,13 +13,35 @@ The main issue is accessibility, to put it simply it is difficult to find limite
 # R11	Description of your marketplace app (website), including:
 - Purpose
 
-To have an easily accessible marketplace for not only authentic sneaker buyers but sellers too, givng the seller the ability to upload as many sneakers as possible. As well as providing the buyer with a safe and easy environment for purchase.
+To have an easily accessible marketplace for not only authentic sneaker buyers but sellers too, givng the seller the ability to upload as many sneakers as possible. As well as providing the buyer with a safe and easy environment for purchase. 
 
 - Functionality / features
+
+Authorization: this function only lets the seller edit and delete the item, other users do not have any access to edit or delete another sellers items, even if the link is copied from the edit page and pasted into the search bar of a different account it will have a sign that says "unauthorized access"
+
+Authentication: Buyers have the ability to browse all the items without having to make an account/log in. This makes purchase very easy for buyers who want to purchase something quickly without having to take time out to sign up.
+
+
+
 - Sitemap
+
+
 - Screenshots
+
+
 - Target audience
+
+The target audience is very broad and cany apply to basically anybody globally who would like to purchase a new pair of shoes.
+
 - Tech stack (e.g. html, css, deployment platform, etc)
+HTML
+CSS
+BootStrap
+Javascript
+Ruby on Rails
+Postgresql
+Heroku 
+Gems: Devise, Rolify, SimpleForm
 
 # User stories for your app
 
