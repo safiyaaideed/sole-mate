@@ -11,6 +11,7 @@ The main issue is accessibility, to put it simply it is difficult to find limite
 
 - Ensure the repo is accessible by your Educators
 # R11	Description of your marketplace app (website), including:
+
 - Purpose
 
 To have an easily accessible marketplace for not only authentic sneaker buyers but sellers too, givng the seller the ability to upload as many sneakers as possible. As well as providing the buyer with a safe and easy environment for purchase. 
@@ -31,6 +32,16 @@ Shows available products for sale  without having to log in.
 
 
 - Screenshots
+
+![1st.png](login)
+![2nd.png](signup)
+![3rd.png](browse1)
+![4th.png](browse2)
+![5th.png](Account)
+![6th.png](AddProducts)
+![7th.png](ProductAdded)
+
+
 
 
 - Target audience
@@ -75,6 +86,14 @@ The third party applications used in the development of this web application wer
 
 # Describe your projects models in terms of the relationships (active record associations) they have with each other
 
+The User Model has stored our users info and can have many products listed.
+
+Authentics Model has all the details, category and description of the products, they are all in one location and shows the images.
+
+
+
+# Discuss the database relations to be implemented in your application
+
 The types of association rails has are the following:
 
 The belongs_to Association
@@ -84,18 +103,15 @@ The has_many :through Association
 The has_one :through Association
 The has_and_belongs_to_many Association
 
-The user has many products and those products belong to the one user, eg. The user can upload many different sneakers but all of those sneakers belong to the one user and are accessible/editable by the one user. 
+There will be 2 relationships used in this app and those are, one to one and one to many. The user has many products and those products belong to the one user, eg. The user can upload many different sneakers but all of those sneakers belong to the one user and are accessible/editable by the one user. 
 
 Here is the code that supports that the user has many products and the products belong to one user.
 
-![Association1](associations.png)
-![Association2](associations1.png)
-
-
-# Discuss the database relations to be implemented in your application
-
+![associations.png](associations.png)
+![association2.png](associations2.png)
 
 # Provide your database schema design
+
 
 # Describe the way tasks are allocated and tracked in your project
 
