@@ -1,6 +1,7 @@
 class AuthenticsController < ApplicationController
   before_action :set_authentic, only: %i[ show edit update destroy ]
   before_action :set_categories
+  
 
   # GET /authentics or /authentics.json
   def index

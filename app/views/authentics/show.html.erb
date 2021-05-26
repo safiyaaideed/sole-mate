@@ -27,12 +27,12 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @authentic.category %>
+  <%= @authentic.category.name%>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @authentic.user_id %>
+  <%= @authentic.user.email%>
 </p>
 
 <%= link_to 'Edit', edit_authentic_path(@authentic) %> |
