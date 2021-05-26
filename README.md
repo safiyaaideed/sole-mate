@@ -1,24 +1,38 @@
-# README
+#  Identification of the problem you are trying to solve by building this particular marketplace app.
+The 
+# 	Why is it a problem that needs solving?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# A link (URL) to your deployed app (i.e. website)
 
-Things you may want to cover:
+# A link to your GitHub repository (repo).
 
-* Ruby version
+- Ensure the repo is accessible by your Educators
+# R11	Description of your marketplace app (website), including:
+- Purpose
+- Functionality / features
+- Sitemap
+- Screenshots
+- Target audience
+- Tech stack (e.g. html, css, deployment platform, etc)
 
-* System dependencies
+# User stories for your app
 
-* Configuration
+# Wireframes for your app
 
-* Database creation
+# An ERD for your app
 
-* Database initialization
+# Explain the different high-level components (abstractions) in your app
 
-* How to run the test suite
+# Detail any third party services that your app will use
 
-* Services (job queues, cache servers, search engines, etc.)
+# Describe your projects models in terms of the relationships (active record associations) they have with each other
 
-* Deployment instructions
+# Discuss the database relations to be implemented in your application
 
-* ...
+# Provide your database schema design
+
+# Describe the way tasks are allocated and tracked in your project
+
+# R21	An outline of the problem you were trying to solve by building this particular marketplace app, and why it’s a problem that needs solving
+
+# R22	A walkthrough of your app
