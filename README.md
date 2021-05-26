@@ -1,5 +1,5 @@
 #  Identification of the problem you are trying to solve by building this particular marketplace app.
-The 
+This particular marketplace was built so that it was easier for 
 # 	Why is it a problem that needs solving?
 
 # A link (URL) to your deployed app (i.e. website)
