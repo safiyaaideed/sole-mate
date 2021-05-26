@@ -1,7 +1,9 @@
 #  Identification of the problem you are trying to solve by building this particular marketplace app.
-This particular marketplace was built so that it was easier for anyone who wants to buy sneakers online for a cheaper price. Most sneaker resell stores upsell the sneakers by almost triple their worth when they are more rare limited items. This marketplace (Sole-Mate) strives to gice the best prices available.
+In 2019, it was estimated that the sneaker resale market was valued at around 6 billion U.S. dollars globally. There is a very high demand when it comes to rare and limited edition sneakers. This particular marketplace was built so that it is easier for anyone who wants to buy sneakers online for a cheaper price. Most sneaker resell stores upsell the sneakers by almost triple their worth when they are more rare and limited items. This marketplace (Sole-Mate) strives to give the best prices available.
 
 # 	Why is it a problem that needs solving?
+
+The main issue is accessibility, to put it simply it is difficult to find limited edition sneakers at a good price, Sole-Mate lets you resell your own brand new or used shoes at a few clicks of a button. Sneaker resale is a massive market and it is still very difficult to have access to a lot of shoes because of the limited stock a lot of marketplaces provide. Sole-Mate lets anyone sell their new and used authentic sneakers. 
 
 # A link (URL) to your deployed app (i.e. website)
 
