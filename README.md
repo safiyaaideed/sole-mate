@@ -21,6 +21,10 @@ Authorization: this function only lets the seller edit and delete the item, othe
 
 Authentication: Buyers have the ability to browse all the items without having to make an account/log in. This makes purchase very easy for buyers who want to purchase something quickly without having to take time out to sign up.
 
+Creates users accounts that stores information for easy future log in.
+
+Shows available products for sale  without having to log in.
+
 
 
 - Sitemap
@@ -31,7 +35,7 @@ Authentication: Buyers have the ability to browse all the items without having t
 
 - Target audience
 
-The target audience is very broad and cany apply to basically anybody globally who would like to purchase a new pair of shoes.
+The target audience is very broad and cany apply to basically anybody globally who would like to purchase a new pair of shoes online.
 
 - Tech stack (e.g. html, css, deployment platform, etc)
 HTML
@@ -61,6 +65,9 @@ Ability to see other listings
 # An ERD for your app
 
 # Explain the different high-level components (abstractions) in your app
+
+The web app is built on Rails and is based on the Model-View-Controller architecture. This pattern allows developers to create complex web apps that are easily built and maintainable. The MVC pattern is a popular architectural pattern when building CRUD applications. This web application consists of routes, views, controllers and models. In this application Routes are used to direct the the requests to the controller which then take the data and returns it to the user which is what they view in the browser. The models represent the database tables and are used to load data, in this case there is a user model category and items model.
+
 
 # Detail any third party services that your app will use
 
