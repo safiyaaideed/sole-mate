@@ -90,8 +90,7 @@ Rails.application.configure do
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  heroku config:set 
-  CLOUDINARY_URL=cloudinary://171142296648828:HArMvHmTF3HOVm7wL-ohjD7Xs7E@djoernmkz
+  
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
