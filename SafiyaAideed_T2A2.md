@@ -133,4 +133,6 @@ The tasks were allocated and tracked through trello, the assignment requirements
 
 A main problem I was trying to solve while building this app was when working on the authorization feature, although I had completed it, I was still able to copy the url from authorised user accounts and paste from an unauthorised user accounts and it would still give the option to edit/delete items that user had not posted. The error had to be fixed because as it was a security issue, the web application now redirects to an "unauthorized user" page when this happens.
 
-# R22	A walkthrough of your app
+# R22	A walkthrough of your app 
+
+Walkthrough of app:
