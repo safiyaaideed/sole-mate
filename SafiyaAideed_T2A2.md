@@ -1,3 +1,8 @@
+
+Trello board link: 
+
+https://trello.com/b/ttp04KJm/rails-app-management
+
 #  Identification of the problem you are trying to solve by building this particular marketplace app.
 In 2019, it was estimated that the sneaker resale market was valued at around 6 billion U.S. dollars globally. There is a very high demand when it comes to rare and limited edition sneakers. This particular marketplace was built so that it is easier for anyone who wants to buy sneakers online for a cheaper price. Most sneaker resell stores upsell the sneakers by almost triple their worth when they are more rare and limited items. This marketplace (Sole-Mate) strives to give the best prices available.
 
@@ -7,9 +12,12 @@ The main issue is accessibility, to put it simply it is difficult to find limite
 
 # A link (URL) to your deployed app (i.e. website)
 
+
 # A link to your GitHub repository (repo).
 
-- Ensure the repo is accessible by your Educators
+https://github.com/safiyaaideed/solemate.git
+
+
 # R11	Description of your marketplace app (website), including:
 
 - Purpose
@@ -30,15 +38,17 @@ Shows available products for sale  without having to log in.
 
 - Sitemap
 
+![sitemap.png](docs/sitemap.png)
+
 
 - Screenshots
-![1st.png](1st.png)
-![2nd.png](signup)
-![3rd.png](browse1)
-![4th.png](browse2)
-![5th.png](Account)
-![6th.png](AddProducts)
-![7th.png](ProductAdded)
+![homepage.png](docs/homepage.png)
+![2nd.png](docs/2nd.png)
+![3rd.png](docs/3rd.png)
+![4th.png](docs/4th.png)
+![5th.png](docs/5th.png)
+![6th.png](docs/6th.png)
+![7th.png](docs/7th.png)
 
 
 
@@ -72,7 +82,9 @@ Ability to see other listings
 
 # Wireframes for your app
 
+
 # An ERD for your app
+
 
 # Explain the different high-level components (abstractions) in your app
 
@@ -90,7 +102,6 @@ The User Model has stored our users info and can have many products listed.
 Authentics Model has all the details, category and description of the products, they are all in one location and shows the images.
 
 
-
 # Discuss the database relations to be implemented in your application
 
 The types of association rails has are the following:
@@ -106,14 +117,20 @@ There will be 2 relationships used in this app and those are, one to one and one
 
 Here is the code that supports that the user has many products and the products belong to one user.
 
-![associations.png](associations.png)
-![association2.png](associations2.png)
+![associations.png](docs/associations.png)
+![association2.png](docs/associations2.png)
 
 # Provide your database schema design
 
 
 # Describe the way tasks are allocated and tracked in your project
 
+The tasks were allocated and tracked through trello, the assignment requirements were marked as high priority and the optional requirements have different labels.
+
+![trello.png](docs/trello.png)
+
 # R21	An outline of the problem you were trying to solve by building this particular marketplace app, and why it’s a problem that needs solving
+
+A main problem I was trying to solve while building this app was when working on the authorization feature, although I had completed it, I was still able to copy the url from authorised user accounts and paste from an unauthorised user accounts and it would still give the option to edit/delete items that user had not posted. The error had to be fixed because as it was a security issue, the web application now redirects to an "unauthorized user" page when this happens.
 
 # R22	A walkthrough of your app
